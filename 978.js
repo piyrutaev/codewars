@@ -1,9 +1,9 @@
-function asd(n, s) {
-    return s.repeat(n)
+function asd(n, x, y) {
+    return Number.isInteger(n / x ) && Number.isInteger(n / y);
 }
 
 function qwe() {
-    console.log(asd(3, 'ha '));
+    console.log(asd(12,3,4));
 }
 
 qwe();
