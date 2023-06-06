@@ -1,7 +1,4 @@
 function asd(name) {
-    return name === name.toUpperCase()
-    // return !/[a-z]/.test(name)
-    //!/^[^A-ZА-ЯЁ]*$/.test(s);
 }
 
 function qwe() {
