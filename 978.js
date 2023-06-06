@@ -1,5 +1,5 @@
 function asd(n, s) {
-    return Array(n).fill(s).join('')
+    return s.repeat(n)
 }
 
 function qwe() {
