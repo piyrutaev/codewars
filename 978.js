@@ -1,4 +1,5 @@
 function asd(name) {
+    console.log('sd')
 }
 
 function qwe() {
