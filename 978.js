@@ -1,9 +1,9 @@
-function asd(name) {
-    console.log('sd')
+function asd(n, s) {
+    return Array(n).fill(s).join('')
 }
 
 function qwe() {
-    console.log(asd("C"));
+    console.log(asd(3, 'ha '));
 }
 
 qwe();
