@@ -1,9 +1,9 @@
-function asd(n, x, y) {
-    return Number.isInteger(n / x ) && Number.isInteger(n / y);
+function asd(num) {
+    return Array(num).fill().map((_, i) => i + 1).reduce((acc, i) => acc += i)
 }
 
 function qwe() {
-    console.log(asd(12,3,4));
+    console.log(asd(2));
 }
 
 qwe();
