@@ -1,13 +1,9 @@
-function asd(num) {
-    let result = '';
-    for(let i = 1; i <= num; i++) {
-        result += `${i} sheep...`;
-    }
-    return result;
+function asd(text, char) {
+    return char.repeat(text.length) 
 }
 
 function qwe() {
-    console.log(asd(0));
+    console.log(asd("_3ebzgh4","&"));
 }
 
 qwe();
