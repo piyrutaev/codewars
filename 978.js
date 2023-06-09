@@ -1,9 +1,9 @@
-function asd(length, width, height) {
-    return (length * height) * width;
+function asd(number) {
+    return number ** 2;
 }
 
 function qwe() {
-    console.log(asd(6,2,5));
+    console.log(asd(3));
 }
 
 qwe();
