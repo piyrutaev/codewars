@@ -1,9 +1,9 @@
-function asd(a, b) {
-    return 180 - (43 + 78);
+function asd(beast, dish) {
+    return beast[0] + beast.slice(-1) == dish[0] + dish.slice(-1);
 }
 
 function qwe() {
-    console.log(asd(43, 78));
+    console.log(asd("chickadee", "chocolate cake"));
 }
 
 qwe();
