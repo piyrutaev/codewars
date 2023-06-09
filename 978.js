@@ -1,18 +1,9 @@
-function asd(num) {
-    return Array(num).fill().map((_, i) => i + 1).reduce((acc, i) => acc += i)
+function asd(length, width, height) {
+    return (length * height) * width;
 }
 
 function qwe() {
-    console.log(asd(2));
+    console.log(asd(6,2,5));
 }
 
 qwe();
-
-/**
- * принимаю 2 строки. сколько строк равных первой строке можно построить из букв, содержщихся во второй строке. вернуть число.
- * 
- * 
- */
-
-
-
