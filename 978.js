@@ -1,9 +1,9 @@
-function asd(longDate) {
-    return longDate.split(',')[0];
+function asd(a, b, c) {
+    return a + b + c;
 }
 
 function qwe() {
-    console.log(asd('Friday May 2, 9am'));
+    console.log(asd(43, 10, 5));
 }
 
 qwe();
