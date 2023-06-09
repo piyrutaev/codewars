@@ -1,9 +1,9 @@
-function asd(number) {
-    return number ** 2;
+function asd(longDate) {
+    return longDate.split(',')[0];
 }
 
 function qwe() {
-    console.log(asd(3));
+    console.log(asd('Friday May 2, 9am'));
 }
 
 qwe();
