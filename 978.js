@@ -1,9 +1,9 @@
-function asd(a, b, c) {
-    return a + b + c;
+function asd(str) {
+    return str.slice(1, -1);
 }
 
 function qwe() {
-    console.log(asd(43, 10, 5));
+    console.log(asd('eloquent'));
 }
 
 qwe();
