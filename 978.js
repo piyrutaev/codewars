@@ -1,9 +1,13 @@
-function asd(beast, dish) {
-    return beast[0] + beast.slice(-1) == dish[0] + dish.slice(-1);
+function asd(num) {
+    let result = '';
+    for(let i = 1; i <= num; i++) {
+        result += `${i} sheep...`;
+    }
+    return result;
 }
 
 function qwe() {
-    console.log(asd("chickadee", "chocolate cake"));
+    console.log(asd(0));
 }
 
 qwe();
