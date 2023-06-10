@@ -1,13 +1,9 @@
-function asd(weight, height) {
-    let result = weight / (height * height);
-    if(result <= 18.5) return 'Underweight';
-    if(result <= 25.0) return 'Normal';
-    if(result <= 30.0) return 'Overweight';
-    if(result > 30) return 'Obese';
+function asd(args) {
+    return Math.min.apply(null, args)
 }
 
 function qwe() {
-    console.log(asd(80, 1.80));
+    console.log(asd([78,56,232,12,8]));
 }
 
 qwe();
