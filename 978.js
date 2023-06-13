@@ -1,9 +1,9 @@
-function asd(bin) {
-    return parseInt(bin, 2)
+function asd(letter) {
+    return `Position of alphabet: ${'abcdefghijklmnopqrstuvwxyz'.indexOf(letter) + 1}`;
 }
 
 function qwe() {
-    console.log(asd("1001001")); 
+    console.log(asd("a")); 
 }
 
 qwe();
