@@ -1,13 +1,11 @@
-function asd(string) {
-    return string.split(' ').map(el => {
-        return el.replace(/[a, e, i, o, u]/gi, '')
-    }).join(' ');
-
-    // return string.replace(/[aeiou]/g, '')
+function asd(word) {
+    return word.slice(0, 1).toUpperCase() + word.slice(1); 
+    
+    // return word[0].toUpperCase() + word.slice(1); 
 }
 
 function qwe() {
-    console.log(asd('how are you today?')); //how are you today?
+    console.log(asd('intern')); 
 }
 
 qwe();
