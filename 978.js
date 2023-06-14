@@ -1,9 +1,13 @@
-function asd(letter) {
-    return `Position of alphabet: ${'abcdefghijklmnopqrstuvwxyz'.indexOf(letter) + 1}`;
+function asd(a, b) {
+    return a && b ? false :
+    a || b ? true :
+    false;
+
+    // return a != b;
 }
 
 function qwe() {
-    console.log(asd("a")); 
+    console.log(asd(false, false)); 
 }
 
 qwe();
