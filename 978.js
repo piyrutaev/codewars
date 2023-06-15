@@ -1,15 +1,13 @@
-function asd(string) {
-    return [...string].reduce((acc, el) => {
-        return acc + el.charCodeAt()
-    }, 0)
-    /*
-    return string.split('').reduce((acc, el) => {
-        return acc += el.charCodeAt()
-    }, 0) */
+function asd(numbers) {
+    return numbers.reduce((acc, el) => acc + el ** 2, 0);
+
+    /*return numbers.reduce((acc, el) => {
+        return acc + el ** 2;
+    }, 0)*/
 }
 
 function qwe() {
-    console.log(asd('aa')); 
+    console.log(asd([])); 
 }
 
 qwe();
