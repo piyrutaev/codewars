@@ -1,13 +1,9 @@
-function asd(numbers) {
-    return numbers.reduce((acc, el) => acc + el ** 2, 0);
-
-    /*return numbers.reduce((acc, el) => {
-        return acc + el ** 2;
-    }, 0)*/
+function asd(quantity, price) {
+    return (quantity - Math.floor(quantity / 3)) * price;
 }
 
 function qwe() {
-    console.log(asd([])); 
+    console.log(asd(2, 3)); 
 }
 
 qwe();
