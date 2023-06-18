@@ -1,21 +1,12 @@
-function asd(formData) {
-    let map = {
-        '<' : '&lt;',
-        '>' : '&gt;',
-        '"' : '&quot;',
-        '&' : '&amp;',
-    }
-    return formData.replace(/[<>"&]/g, el => map[el])
-    // return formData.replace(/[<>"&]/g, function(el) { return map[el]})
+function asd(a, b) {
+    return Math.abs(a.reduce((acc, el) => acc * el) - b.reduce((acc, el) => acc * el));
+
+    // let res = [a.reduce((acc, el) => acc * el), b.reduce((acc, el) => acc * el)].sort((a, b) => b - a);
+    // return res[0] - res[1];
 }
 
 function qwe() {
-    console.log(asd("<h2>Hello World</h2>")); 
+    console.log(asd([3, 2, 5], [1, 4, 4])); 
 }
 
 qwe();
-
-// Происходит замена одних элементов в строке на другие. В объекте map, в качестве ключей указаны элементы, которые нужно найти в строке 
-// и заменить, они же перечислены в регулярном выражении метода replace. В качестве значений объекта map указаны элементы, на которые нужно
-// произвести замену. Второй аргумент метода replace - функция, которая проходит по строке и при обнаружении элемента из РВ, обращается
-// к объекту map и возвращает значение найденного ключа. Т.о., в строке ключ меняется на его значение.
