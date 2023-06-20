@@ -1,19 +1,21 @@
-function asd(numbers) {
-    
-    return Array(numbers.at(-1) - numbers[0] + 1).fill().map((_, i) => numbers[0] + i)
-
-    let result = [numbers[0]];
-    while(numbers[0] < numbers.at(-1)) {
-        result.push(numbers[0] + 1)
-        numbers[0]++
+function asd(one, two, three) {
+    let result = '';
+    for(let i = 0; i < one.length; i++) {
+        result += one[i] + two[i] + three[i];
     }
     return result
 
-    // return Array.from({length: numbers.pop() - numbers[0] + 1}, (_, i) => i + numbers[0]);
+    let res = []
+    for(let i = 1; i <= one.length; i++) {
+        res.push(one.slice(i-1, i))
+        res.push(two.slice(i-1, i))
+        res.push(three.slice(i-1, i))
+    }
+    return res.join('')
 }
 
 function qwe() {
-    console.log(asd([])); 
+    console.log(asd("Sea","urn","pms")); 
 }
 
 qwe();
