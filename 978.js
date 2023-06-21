@@ -1,21 +1,41 @@
-function asd(one, two, three) {
-    let result = '';
-    for(let i = 0; i < one.length; i++) {
-        result += one[i] + two[i] + three[i];
-    }
-    return result
+function asd(operation, value1, value2) {
+  let result;
+  // switch(operation) {
+  //   case '+' :
+  //     result = value1 + value2;
+  //     break;
+  //   case '-' :
+  //     result = value1 - value2;
+  //     break;  
+  //   case '*' :
+  //     result = value1 * value2;
+  //     break;
+  //   case '/' :
+  //     result = value1 / value2;
+  //     break;  
+  //   default : return 'Invalid operator'
+  // }  
+  // return result;
 
-    let res = []
-    for(let i = 1; i <= one.length; i++) {
-        res.push(one.slice(i-1, i))
-        res.push(two.slice(i-1, i))
-        res.push(three.slice(i-1, i))
-    }
-    return res.join('')
+  // switch(operation) {
+  //   case '+' : return value1 + value2;
+  //   case '-' : return value1 - value2;
+  //   case '*' : return value1 * value2;
+  //   case '/' : return value1 / value2;
+  //   default : return 'Invalid operator'
+  // }
+
+  let cases = {
+    '+': value1 + value2,
+    '-': value1 - value2,
+    '*': value1 * value2,
+    '/': value1 / value2,
+  }
+  return cases[operation]
 }
 
 function qwe() {
-    console.log(asd("Sea","urn","pms")); 
+    console.log(asd('/', 4, 7)); 
 }
 
 qwe();
