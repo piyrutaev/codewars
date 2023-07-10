@@ -1,41 +1,16 @@
-function asd(operation, value1, value2) {
-  let result;
-  // switch(operation) {
-  //   case '+' :
-  //     result = value1 + value2;
-  //     break;
-  //   case '-' :
-  //     result = value1 - value2;
-  //     break;  
-  //   case '*' :
-  //     result = value1 * value2;
-  //     break;
-  //   case '/' :
-  //     result = value1 / value2;
-  //     break;  
-  //   default : return 'Invalid operator'
-  // }  
-  // return result;
-
-  // switch(operation) {
-  //   case '+' : return value1 + value2;
-  //   case '-' : return value1 - value2;
-  //   case '*' : return value1 * value2;
-  //   case '/' : return value1 / value2;
-  //   default : return 'Invalid operator'
-  // }
-
-  let cases = {
-    '+': value1 + value2,
-    '-': value1 - value2,
-    '*': value1 * value2,
-    '/': value1 / value2,
+function asd(n) {
+  if(String(n).length == 1) return n;
+  let a = String(n).split('');
+  while(a[a.length-1] == 0) {
+    a.pop()
   }
-  return cases[operation]
+  return Number(a.join(''));
+
+  //return Number(String(n).replace(/0+$/,''));
 }
 
 function qwe() {
-    console.log(asd('/', 4, 7)); 
+    console.log(asd(0)); 
 }
 
 qwe();
