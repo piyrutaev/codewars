@@ -1,9 +1,10 @@
-function asd(arr, item) {
-    return arr.includes(item);
+function asd(s) {
+    
+    return ~~(s * 27.7777777778);
 }
 
 function qwe() {
-    console.log(asd([1,2,4,5], 3)); // 
+    console.log(asd(1.08)); // 
 }
 
 qwe();
