@@ -1,10 +1,14 @@
-function asd(array) {
-    return array ? array.sort((a, b) => a - b).slice(1, -1).reduce((acc, el) => acc + el, 0) : 0;
-     
+function asd(string) {
+    let symbols = {
+        5: 'S',
+        0: 'O',
+        1: 'I',
+    }
+     return string.replace(/[5,0,1]/g, (key) => symbols[key]);
 }
 
 function qwe() {
-    console.log(asd(null)); 
+    console.log(asd('DUBL1N')); 
 }
 
 qwe();
