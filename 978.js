@@ -1,14 +1,9 @@
-function asd(string) {
-    let symbols = {
-        5: 'S',
-        0: 'O',
-        1: 'I',
-    }
-     return string.replace(/[5,0,1]/g, (key) => symbols[key]);
+function asd(name, city, state) {
+    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
 }
 
 function qwe() {
-    console.log(asd('DUBL1N')); 
+    console.log(asd(['Franklin','Delano','Roosevelt'], 'Chicago', 'Illinois')); 
 }
 
 qwe();
