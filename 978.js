@@ -1,16 +1,11 @@
 function asd(card) {
-    let suits = {
-        9824: 'spades',
-        9827: 'clubs',
-        9829: 'hearts',
-        9830: 'diamonds',
-    }
-    return suits[card.charCodeAt(card.length-1)]
+    // return card == '' ? '' : 'sex '.repeat(card.split(' ').length).slice(0, -1)
+    return card.replace(/[^ ]+/g, 'sex')
 
 }
 
 function qwe() {
-    console.log(asd('Q♠')); 
+    console.log(asd('This is a sample sentence.')); 
 }
 
 qwe();
