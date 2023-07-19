@@ -1,11 +1,10 @@
-function asd(card) {
-    // return card.replace(/[0-9]/g, '')
-    // return card.replace(/\d/g, '')
+function asd(string) {
+    return `${string.replace(/[!]/g, '')}!`
 
 }
 
 function qwe() {
-    console.log(asd('(E3at m2e2!!)')); 
+    console.log(asd("Hi")); 
 }
 
 qwe();
