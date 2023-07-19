@@ -1,6 +1,6 @@
 function asd(card) {
     // return card.replace(/[0-9]/g, '')
-    return card.replace(/\d/g, '')
+    // return card.replace(/\d/g, '')
 
 }
 
