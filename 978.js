@@ -1,11 +1,16 @@
-function asd(s) {
-    return /tree fiddy|3.50|three fifty/.test(s);
-    return s.includes('tree fiddy') || s.includes('3.50') || s.includes('three fifty');
+function asd(string) {
+    // while(string.endsWith('!')) {
+    //     string = string.slice(0, -1);
+    // } 
+    // return string;
 
+    return string.replace(/!+$/, ''); // удаляет все ! в конце строки.
+
+    // return string.replace(/^!+|!+$/g, ''); // удаляет все ! в начале и в конце строки.
 }
 
 function qwe() {
-    console.log(asd("Your girlscout cookies are ready to ship. Your total comes to tree fiddy")); 
+    console.log(asd("!!!Hi!!")); 
 }
 
 qwe();
