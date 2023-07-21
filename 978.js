@@ -1,9 +1,10 @@
 function asd(s) {
-    return parseFloat(s);
+    // return s.toLowerCase().includes('english');
+    return /english/i.test(s);
 }
 
 function qwe() {
-    console.log(asd("-234.4")); 
+    console.log(asd("english")); 
 }
 
 qwe();
