@@ -1,9 +1,9 @@
 function asd(s) {
-    return s.endsWith('?') ? s : s + '?';
+    return parseFloat(s);
 }
 
 function qwe() {
-    console.log(asd('')); 
+    console.log(asd("-234.4")); 
 }
 
 qwe();
