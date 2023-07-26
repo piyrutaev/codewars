@@ -1,17 +1,16 @@
-function asd(code) {
-  const a = {
-    'H': 'Hello World!',
-    'Q': 'Q',
-    '9': '99 bottles of beer on the wall',
-    'X': undefined
+function asd(s, n) {
+  while(n) {
+    // s = s.replace(/!/, '^');
+    s = s.replace('!', '*');
+    // s = s.replace('!', '');
+    n--;
   }
-  return code in a ? a[code] : 'no';
-  // return a[code]
+  return s
 };
 
 
 function qwe() {
-    console.log(asd('D')); 
+    console.log(asd('!!Hi!!!', 5)); 
 }
 
 qwe();
