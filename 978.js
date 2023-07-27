@@ -1,16 +1,10 @@
-function asd(s, n) {
-  while(n) {
-    // s = s.replace(/!/, '^');
-    s = s.replace('!', '*');
-    // s = s.replace('!', '');
-    n--;
-  }
-  return s
+function asd(s) {
+  return s.replace(/[aeiou]/gi, '!')
 };
 
 
 function qwe() {
-    console.log(asd('!!Hi!!!', 5)); 
+    console.log(asd("ABCDE")); 
 }
 
 qwe();
