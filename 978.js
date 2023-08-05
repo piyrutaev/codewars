@@ -1,16 +1,23 @@
-function asd(knightPosition, kingPosition) {
-  let files = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-  let filesPosition = Math.abs(files.indexOf(knightPosition[1]) - files.indexOf(kingPosition[1]));
-  let rankPosition = Math.abs(knightPosition[0] - kingPosition[0]);
-  if(filesPosition == 1 && rankPosition == 2 || filesPosition == 2 && rankPosition == 1) return 'Knight';
-  if(filesPosition < 2 && rankPosition <= 1) return 'King';
-  return 'None';
+function asd(text, n, oldValue, newValue) {
+  // let regex = new RegExp("((?:[^" +oldValue+ "]*" +oldValue+ "){" + (n-1) + "}[^" +oldValue+ "]*)" +oldValue, "g");
+  // return text.replace(regex, `$1${newValue}`);
+
+  if(n > 0) {
+    let count = 0;
+    let regexp = new RegExp(oldValue, 'g');
+    return text.replace(regexp, match => {
+      count++;
+      return (count % n === 0) ? newValue : match;
+    })
+  }
+  return text;
 };
 
 
 
 function qwe() {
-    console.log(asd([1,"B"], [1,"C"])); 
+    console.log(asd("Vader said: No, I am your father!", 1, 'a', 'o')); 
 }
 
 qwe();
+
