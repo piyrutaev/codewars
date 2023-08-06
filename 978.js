@@ -1,12 +1,12 @@
-function asd(code) {
-    // let check = /^[1-3]\d*$/;
-    // return check.test(code);
+function asd(a, b) {
+    // let regexp = new RegExp(a);
+    // return regexp.test(b)
 
-    return /^[1-3]/.test(code);
+    return a == b;
 }
 
 function qwe() {
-    console.log(asd(345)); 
+    console.log(asd(120, 12021)); 
 }
 
 qwe();
