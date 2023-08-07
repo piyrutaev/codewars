@@ -1,12 +1,41 @@
-function asd(a, b) {
-    // let regexp = new RegExp(a);
-    // return regexp.test(b)
+function asd(parenStr) {
+    let count = 0;
 
-    return a == b;
+    for(const element of parenStr) {
+        if(element === '(') {
+            count++;
+        } else {
+            count--;
+        }
+
+        if(count === -1) {
+            return false;
+        }
+    }
+
+    return count === 0;
+
+
+    let result = 0;
+    let arr = parenStr.split('');
+
+    for(const el of arr) {
+        if(el === '(') {
+            result ++;
+        } else {
+            result--;
+        }
+
+        if(result === -1) {
+            return false;
+        }
+    }
+
+    return result != 0 ? false : true;
 }
 
 function qwe() {
-    console.log(asd(120, 12021)); 
+    console.log(asd('()(()))')); 
 }
 
 qwe();
