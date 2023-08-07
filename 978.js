@@ -1,41 +1,11 @@
-function asd(parenStr) {
-    let count = 0;
-
-    for(const element of parenStr) {
-        if(element === '(') {
-            count++;
-        } else {
-            count--;
-        }
-
-        if(count === -1) {
-            return false;
-        }
-    }
-
-    return count === 0;
-
-
-    let result = 0;
-    let arr = parenStr.split('');
-
-    for(const el of arr) {
-        if(el === '(') {
-            result ++;
-        } else {
-            result--;
-        }
-
-        if(result === -1) {
-            return false;
-        }
-    }
-
-    return result != 0 ? false : true;
+function asd(items, a, b) {
+    // let one = items.slice(0, a)
+    // let two = items.slice(b)
+    return items.slice(0, a).concat(items.slice(b))
 }
 
 function qwe() {
-    console.log(asd('()(()))')); 
+    console.log(asd([12, 14, 63, 72, 55, 24], 2, 4)); 
 }
 
 qwe();
