@@ -1,16 +1,19 @@
-function asd(arr, x, y) {
-    if(x > 1 && y > 1 && x <= arr.length && y <= arr.length) {
-        let one = arr.slice(0, x).reduce((acc, el) => acc + el) / x;
-        let two = arr.slice(-y).reduce((acc, el) => acc + el) / y;
-        return (one + two) / 2;
+function asd(...n) {
+    for(let i = 1; i < n.length; i++) {
+        if(n[0] % n[i] != 0) return false;
     }
-    return -1;
-    
-    
+    return true;
+}
+
+function asd(n) {
+    for(let i = 1; i < arguments.length; i++) {
+        if(n[0] % arguments[i] != 0) return false;
+    }
+    return true;
 }
 
 function qwe() {
-    console.log(asd([1,3,2,4],2,8)); 
+    console.log(asd(8,3,4,2,5)); 
 }
 
 qwe();
