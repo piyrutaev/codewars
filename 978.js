@@ -1,19 +1,12 @@
-function asd(...n) {
-    for(let i = 1; i < n.length; i++) {
-        if(n[0] % n[i] != 0) return false;
-    }
-    return true;
-}
+function asd(message) {
+    // let arr = message.map(el => parseInt(el, 2));
+    // return arr.map(el => String.fromCharCode(el)).join('');
 
-function asd(n) {
-    for(let i = 1; i < arguments.length; i++) {
-        if(n[0] % arguments[i] != 0) return false;
-    }
-    return true;
+    return message.map(el => parseInt(el, 2)).map(el => String.fromCharCode(el)).join('');
 }
 
 function qwe() {
-    console.log(asd(8,3,4,2,5)); 
+    console.log(asd(['01000001', '01101100', '01100101', '01111000', '01100001', '01101110', '01100100', '01100101', '01110010'])); // ['01000001', '01101100', '01100101', '01111000', '01100001', '01101110', '01100100', '01100101', '01110010']
 }
 
 qwe();
