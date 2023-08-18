@@ -1,12 +1,11 @@
-function asd(...arr /*a, b, c*/ ) {
-    // return [a, b, c].filter(el => el > 0).length === 2;
-    // return [...arguments].filter(el => el > 0).length === 2;
-    return arr.filter(el => el > 0).length === 2;
-     
+function asd(str) {
+    let a = str[0].split(':')
+    let b = str[1].split(':')
+    return [a[0] + ':' + b[1], b[0] + ':' + a[1]];
 }
 
 function qwe() {
-    console.log(asd(2, -4, -3)); 
+    console.log(asd(['abc:123', 'cde:456'])); 
 }
             
 
