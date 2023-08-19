@@ -1,33 +1,28 @@
-function asd(day, num) {
-    return {
-        'Monday': num === 12,
-        'Tuesday': num > 95,
-        'Wednesday': num === 34,
-        'Thursday': num === 0,
-        'Friday': num % 2 === 0,
-        'Saturday': num === 56,
-        'Sunday': Math.abs(666), 
-    }[day]
+function asd(word) {
+    var letters =  {
+        "A": "Alpha",  "B": "Bravo",   "C": "Charlie",
+        "D": "Delta",  "E": "Echo",    "F": "Foxtrot",
+        "G": "Golf",   "H": "Hotel",   "I": "India",
+        "J": "Juliett","K": "Kilo",    "L": "Lima",
+        "M": "Mike",   "N": "November","O": "Oscar",
+        "P": "Papa",   "Q": "Quebec",  "R": "Romeo",
+        "S": "Sierra", "T": "Tango",   "U": "Uniform",
+        "V": "Victor", "W": "Whiskey", "X": "X-ray",
+        "Y": "Yankee", "Z": "Zulu"
+      }
+    
+    let b = '';
+    for(let i = 0; i < word.length; i++) {
+        b += letters[word[i].toUpperCase()]
+        b += ' ';
+    }
+    return b.trim();
     
 }
 
 function qwe() {
-    console.log(asd("Monday", 12)); 
+    console.log(asd("hi")); 
 }
             
 
 qwe();
-
-// Monday --> 12
-
-// Tuesday --> numbers greater than 95
-
-// Wednesday --> 34
-
-// Thursday --> 0
-
-// Friday --> numbers divisible by 2
-
-// Saturday --> 56
-
-// Sunday --> 666 or -666
