@@ -1,3 +1,4 @@
+// Это вариант, предложенный ИИ.
 function areBracketsBalanced(str) {
     let stack = [];
     let bracketsMap = {
@@ -21,6 +22,9 @@ function areBracketsBalanced(str) {
 console.log(areBracketsBalanced("()(){}[]"));
 
 
+// Это мой вариант, до которого я додумался сам, когда повторял решение этой задачи.
+// Показал оба варианта ИИ, он утверждает, что мое решение предпочтительней, т.к. не содержит
+// дополнительной проверки `Object.values(bracketsMap).includes(char)`.
 function areBracketsBalanced2(str) {
     let stack = [];
     const bracketsMap = {
