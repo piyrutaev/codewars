@@ -19,3 +19,24 @@ function areBracketsBalanced(str) {
 }
 
 console.log(areBracketsBalanced("()(){}[]"));
+
+
+function areBracketsBalanced2(str) {
+    let stack = [];
+    const bracketsMap = {
+        "(": ")",
+        "[": "]",
+        "{": "}",
+    };
+
+    for(let char of str) {
+        if(bracketsMap[char]) {
+            stack.push(char);
+        } else if(stack.length === 0 || char !== bracketsMap[stack.pop()]) {
+            return false;
+        }
+    }
+    return stack.length === 0;
+}
+
+console.log(areBracketsBalanced2("((())"));
